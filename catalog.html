@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -34,7 +36,60 @@
   <main>
     <section class="filters-hotel">
       <h2 class="visually-hidden">Форма заказа</h2>
-      <!--   форма заказа     -->
+      <form class="form-filters" action="#" method="post">
+        <fieldset class="filter-hotel-field">
+          <legend class="filter-hotel-description">Инфраструктура:</legend>
+          <ul class="form-list">
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="pool" type="checkbox" name="pool" checked>
+              <label for="pool" class="filter-hotel-label">Бассейн</label>
+            </li>
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="parking" type="checkbox" name="parking">
+              <label for="parking" class="filter-hotel-label">Парковка</label>
+            </li>
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="wi-fi" type="checkbox" name="wi-fi"> <label for="wi-fi" class="filter-hotel-label">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-hotel-field">
+          <legend class="filter-hotel-description">Тип жилья:</legend>
+          <ul class="form-list">
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="hotel" type="checkbox" name="hotel" checked>
+              <label for="hotel" class="filter-hotel-label">Гостиница</label>
+            </li>
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="motel" type="checkbox" name="motel" checked>
+              <label for="motel" class="filter-hotel-label">Мотель</label>
+            </li>
+            <li class="form-item">
+              <input class="visually-hidden filter-hotel-input" id="apartmens" type="checkbox" name="apartments" checked>
+              <label for="apartmens" class="filter-hotel-label">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-hotel-field">
+          <legend class="filter-hotel-description">Стоимость в сутки (р):</legend>
+          <div class="price-controls">
+            <label class="price-controls-label price-controls-label__min">от <input class="price-controls-input" type="text" name="min-price" value="0"></label>
+            <label class="price-controls-label price-controls-label__max">до <input class="price-controls-input" type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle__min">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+            </div>
+            <div class="range-toggle range-toggle__max">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+            </div>
+          </div>
+          <button class="btn btn-filter" type="submit">Показать</button>
+        </fieldset>
+      </form>
     </section>
     <section class="sort-row">
       <ul class="sort-row-list">
