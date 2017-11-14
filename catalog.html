@@ -12,9 +12,10 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="header-logo-link">
-        <img class="header-logo-img" src="img/logo.png" width="138" height="70" alt="Логотип">
+    <nav class="main-navigation container">
+      <h2 class="visually-hidden">Логотип</h2>
+      <a class="header-logo-link" href="index.html">
+        <img class="header-logo-img" src="img/index-logo.png" width="138" height="70" alt="Логотип">
       </a>
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
@@ -33,7 +34,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-wrapper">
     <section class="filters-hotel">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form-filters" action="#" method="post">
@@ -103,55 +104,59 @@
           <a href="#" class="sort-row-link">по рейтингу</a>
         </li>
         <li class="sort-row-item sort-row-item__arrow">
-          <a class="sort-row-link-arrow sort-row-link-arrow__down">вверх</a>
+          <a class="sort-row-link-arrow sort-row-link-arrow__down" aria-label="вверх"></a>
         </li>
         <li class="sort-row-item">
-          <a href="#" class="sort-row-link-arrow sort-row-link-arrow__up">вниз</a>
+          <a href="#" class="sort-row-link-arrow sort-row-link-arrow__up" aria-label="вниз"></a>
         </li>
       </ul>
     </section>
     <section class="catalog-hotel">
       <h2 class="visually-hidden">Каталог отелей</h2>
       <article class="catalog-item">
-        <div class="catalog-item-photo">
-          <img class="catalog-hotel-item-photo-img" src="img/Amara.jpg" width="135" height="90" alt="amara">
-        </div>
-        <div class="catalog-info">
-          <a class="catalog-info-title" href="#">Amara Resort & Spa</a>
-          <div class="catalog-info-description">
-            <span class="catalog-info-description-text">гостиница</span>
-            <span class="catalog-info-description-text">от 4000 р.</span>
+        <div class="container">
+          <div class="catalog-item-photo">
+            <img class="catalog-hotel-item-photo-img" src="img/Amara.jpg" width="135" height="90" alt="amara">
           </div>
-          <div class="catalog-info-link">
-            <a class="btn catalog-info-btn-description" href="#">подробнее</a>
-            <a class="btn catalog-info-btn-book-it" href="#">забронировать</a>
+          <div class="catalog-info">
+            <a class="catalog-info-title" href="#">Amara Resort & Spa</a>
+            <div class="catalog-info-description">
+              <span class="catalog-info-description-text">гостиница</span>
+              <span class="catalog-info-description-text">от 4000 р.</span>
+            </div>
+            <div class="catalog-info-link">
+              <a class="btn catalog-info-btn-description" href="#">подробнее</a>
+              <a class="btn catalog-info-btn-book-it" href="#">забронировать</a>
+            </div>
           </div>
-        </div>
-        <div class="catalog-rating">
-          <span class="catalog-rating-stars catalog-rating-stars__amara">
+          <div class="catalog-rating">
+            <span class="catalog-rating-stars catalog-rating-stars__amara">
           </span>
-          <span class="catalog-rating-text">рейтинг: 8,5</span>
+            <span class="catalog-rating-text">рейтинг: 8,5</span>
+          </div>
         </div>
       </article>
       <article class="catalog-item">
-        <div class="catalog-item-photo">
-          <img class="catalog-hotel-item-photo-img" src="img/desert.jpg" width="135" height="90" alt="desert">
-        </div>
-        <div class="catalog-info">
-          <a class="catalog-info-title" href="#">Desert Quail Inn</a>
-          <div class="catalog-info-description">
-            <span class="catalog-info-description-text">мотель</span>
-            <span class="catalog-info-description-text">от 3000 р.</span>
+        <div class="container">
+          <div class="catalog-item-photo">
+            <img class="catalog-hotel-item-photo-img" src="img/desert.jpg" width="135" height="90" alt="desert">
           </div>
-          <div class="catalog-info-link">
-            <a class="btn catalog-info-btn-description" href="#">подробнее</a>
-            <a class="btn catalog-info-btn-book-it" href="#">забронировать</a>
+          <div class="catalog-info">
+            <a class="catalog-info-title" href="#">Desert Quail Inn</a>
+            <div class="catalog-info-description">
+              <span class="catalog-info-description-text">мотель</span>
+              <span class="catalog-info-description-text">от 3000 р.</span>
+            </div>
+            <div class="catalog-info-link">
+              <a class="btn catalog-info-btn-description" href="#">подробнее</a>
+              <a class="btn catalog-info-btn-book-it" href="#">забронировать</a>
+            </div>
           </div>
-        </div>
-        <div class="catalog-rating">
-          <span class="catalog-rating-stars catalog-rating-stars__desert">
+          <div class="catalog-rating">
+            <span class="catalog-rating-stars catalog-rating-stars__desert">
           </span>
-          <span class="catalog-rating-text">рейтинг: 8,9</span>
+            <span class="catalog-rating-text">рейтинг: 8,9</span>
+          </div>
         </div>
       </article>
       <article class="catalog-item">
@@ -185,9 +190,9 @@
       <a href="#" class="footer-hashtag-link">#visitSEDONA</a>
     </section>
     <section class="footer-social">
-      <a class="social-btn social-btn-tw" href="#">твиттер</a>
-      <a class="social-btn social-btn-fb" href="#">фейсбук</a>
-      <a class="social-btn social-btn-yt" href="#">ютуб</a>
+      <a class="social-btn social-btn-tw" href="#" aria-label="твиттер"></a>
+      <a class="social-btn social-btn-fb" href="#" aria-label="фейсбук"></a>
+      <a class="social-btn social-btn-yt" href="#" aria-label="ютуб"></a>
     </section>
     <section class="footer-copyrigth">
       <span class="footer-copyrigth-text">Website by</span>
