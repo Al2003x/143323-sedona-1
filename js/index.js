@@ -1,4 +1,4 @@
-var link = document.querySelector(".btn-search");
+var link = document.querySelector(".search__btn");
 var popup = document.querySelector(".search-form");
 var datearrival = popup.querySelector("[name=arrival]");
 var datedeparture = popup.querySelector("[name=departure]");
