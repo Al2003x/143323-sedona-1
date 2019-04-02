@@ -1066,7 +1066,7 @@ img {
   clip: rect(0 0 0 0);
 }
 
-.rating__input:focus ~ .rating__focus {
+.rating__input:hover ~ .rating__focus {
   position: absolute;
   top: 0;
   right: 0;
